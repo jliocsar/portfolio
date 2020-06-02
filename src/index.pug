@@ -1,0 +1,22 @@
+doctype html
+html(lang='pt-BR', class='font-mono xl:text-lg')
+  head
+    //- Including head meta, links and scripts
+    include core/head
+  body
+    div(id='app', class='bg-black text-white antialiased')
+      //- Including menu component
+      include view/components/menu/_menu
+      //- Main content
+      main(class='min-h-screen')
+        include view/components/home/_home
+        img(alt='A page breaker just for design.', src=require('Assets/svg/home-breaker.svg').default, class='w-screen -my-1')
+
+        include view/components/about/_about
+        include view/components/projects/_projects
+        img(alt='A page breaker just for design.', src=require('Assets/svg/projects-breaker.svg').default, class='w-screen -my-1')
+
+        include view/components/contact/_contact
+        img(alt='A page breaker just for design.', src=require('Assets/svg/contact-breaker.svg').default, class='w-screen -my-1')
+
+      include core/footer

@@ -1,0 +1,39 @@
+/*
+  Mobile Menu Styles 
+*/
+#app > header.active {
+  @apply flex-col h-full w-full p-4;
+}
+
+#app > header.active nav {
+  @apply relative;
+}
+
+#app > header.active nav ul li a svg {
+  @apply w-6 h-6 mr-4 self-center;
+}
+
+#app > header.active nav ul li:hover svg path,
+#app > header.active nav ul li:hover span {
+  @apply text-purple-500;
+}
+
+#app > header.active nav ul li:hover svg path {
+  @apply fill-current transition duration-200 ease-in;
+}
+
+#app > header.active nav ul li:hover span {
+  @apply transform translate-x-4;
+}
+
+#app > header.active #mob-menu-button {
+  @apply relative w-full my-12 mx-auto;
+}
+
+#app > header.active #mob-menu-button i {
+  @apply hidden;
+}
+
+#app > header.active #mob-menu-button span {
+  @apply block;
+}

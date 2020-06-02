@@ -1,0 +1,8 @@
+/*
+  Import to all custom CSS files
+*/
+@import './layout/layout.css';
+@import './layout/media.css';
+@import './layout/scroll_animations.css';
+@import './components/menu/menu.css';
+@import './components/contact/contact.css';

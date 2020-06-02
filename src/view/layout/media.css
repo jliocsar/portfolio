@@ -1,0 +1,123 @@
+/*
+ * All hover effects are on this CSS,
+ * so it works on Desktop only
+ */
+
+/*
+  Small Mobile @media
+*/
+@media only screen and (max-width: 480px) {
+  #about ul {
+    @apply grid-cols-1;
+  }
+}
+
+/*
+  Desktop @media
+*/
+@media only screen and (min-width: 768px) {
+  /*
+    Desktop menu styles
+  */
+  #app > header nav ul li {
+    @apply ml-4;
+  }
+
+  /*
+    Hiding icons
+  */
+  #app > header nav ul li a svg {
+    @apply hidden;
+  }
+
+  /*
+    Setting before for the hover styles
+  */
+  #app > header nav ul li a::before {
+    content: '';
+    z-index: -1;
+    transition:
+      opacity 250ms ease,
+      transform 300ms ease;
+    @apply absolute bg-purple-700 rounded top-0 left-0 right-0 bottom-0 opacity-0 scale-0;
+  }
+
+  /*
+    Fixing border divide margin
+  */
+  #app > header nav ul li:nth-of-type(1) a::before {
+    margin: -1px;
+  }
+  
+  /*
+    Hover for the menu items
+  */
+  #app > header nav ul li:hover a::before,
+  #app > header nav ul li a.active::before {
+    @apply opacity-100 scale-100;
+  }
+
+  /* 
+    Desktop menu hover anim
+  */
+  #app > header nav ul li:hover a {
+    @apply opacity-100 scale-100;
+  }
+
+  /* Typewritting Effect */
+  main section#home > h1 {
+    animation: home-name-anim 750ms cubic-bezier(.5, .3, .5, .4) infinite;
+  }
+
+  @keyframes home-name-anim {
+    0%, 100% { border-right: .1em solid transparent; }
+    50% { border-right: .1em solid theme('colors.lightgray'); }
+  }
+
+  /*
+    About Section Styles
+  */
+  #about ul li a {
+    transition:
+      background 250ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  #about ul li a:hover {
+    @apply bg-black rounded-t-sm;
+  }
+
+  #about ul li a::after {
+    content: '';
+    transition:
+      opacity 350ms cubic-bezier(0.645, 0.045, 0.355, 1),
+      width 450ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    @apply block bg-purple-700 h-1 w-0 mt-8 opacity-0 rounded-b-sm;
+  }
+
+  #about ul li a:hover::after {
+    @apply w-full opacity-100;
+  }
+
+  /*
+    Projects Custom Styles
+  */
+  #projects article ul li .project-title {
+    transition: 
+      height 400ms ease;
+  }
+
+  #projects article ul li:hover .project-title {
+    @apply h-full;
+  }
+
+  #projects article ul li .project-title p {
+    transition:
+      transform 150ms ease,
+      opacity 200ms ease;
+    @apply transform -translate-y-8;
+  }
+
+  #projects article ul li:hover .project-title p {
+    @apply opacity-100 transform translate-y-0;
+  }
+}

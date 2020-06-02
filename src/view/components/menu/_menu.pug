@@ -1,0 +1,66 @@
+//- Start of global header
+header(class=`
+  bg-black
+  fixed 
+  w-screen 
+  flex 
+  border-solid
+  border-b
+  border-darkgray
+  shadow-md
+  z-50
+  md:justify-between 
+  md:fixed
+  md:py-4
+  md:px-6
+`)
+  //- Nav tag
+  nav(class=`opacity
+    flex
+    flex-col
+    justify-evenly
+    w-full
+    h-full 
+    hidden
+    md:flex
+    md:flex-row
+    md:justify-between 
+    md:px-3
+  `)
+    //- Left-side logo
+    a(href='/' title='Go home')
+      img(alt='Wolfy', title='Wolfy, the Wolf', src=require('Assets/svg/wolf.svg').default, class=`
+        w-40
+        h-40
+        mx-auto
+        md:w-12
+        md:h-12
+        md:block
+      `)
+
+  //- Mobile menu button
+  button#mob-menu-button(title='Toggle menu', aria-label='Toggle menu', class=`
+    bg-purple-700
+    text-white
+    text-lg
+    hover:bg-purple-600
+    p-2
+    rounded
+    transition-all 
+    ease-in 
+    duration-200 
+    fixed
+    right-0
+    bottom-0
+    shadow-md
+    mb-12
+    mr-6
+    border-solid
+    border-2
+    border-purple-600
+    md:hidden
+  `)
+    i(class=`
+      font-bold
+    `) ...
+    span(class='hidden') Close

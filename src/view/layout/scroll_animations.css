@@ -1,0 +1,87 @@
+/*
+  Setting for page onscroll animations
+*/
+@media only screen and (min-width: 768px) {
+  *[data-scroll-animate='on'] {
+    @apply opacity-0 invisible;
+  }
+
+  .animate-from-top,
+  .animate-from-right,
+  .animate-from-bottom,
+  .animate-from-left {
+    transition: 450ms cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  }
+
+  .animate-from-top {
+    animation: animate-top 500ms cubic-bezier(0.25, 0.45, 0.45, 0.95) forwards;
+  }
+
+  @keyframes animate-top {
+    from { 
+      @apply opacity-0 invisible;
+      transform: translateY(-2rem); 
+    } to {
+      @apply opacity-100 visible;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-from-right {
+    animation: animate-right 500ms cubic-bezier(0.25, 0.45, 0.45, 0.95) forwards;
+  }
+
+  @keyframes animate-right {
+    from {
+      @apply opacity-0 invisible;
+      transform: translateX(2rem); 
+    } to {
+      @apply opacity-100 visible;
+      transform: translateX(0);
+    }
+  }
+
+  .animate-from-bottom {
+    animation: animate-bottom 500ms cubic-bezier(0.25, 0.45, 0.45, 0.95) forwards;
+  }
+
+  @keyframes animate-bottom {
+    from { 
+      @apply opacity-0 invisible;
+      transform: translateY(2rem); 
+    } to {
+      @apply opacity-100 visible;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-from-left {
+    animation: animate-left 500ms cubic-bezier(0.25, 0.45, 0.45, 0.95) forwards;
+  }
+
+  @keyframes animate-left {
+    from { 
+      @apply opacity-0 invisible;
+      transform: translateX(-2rem); 
+    } to {
+      @apply opacity-100 visible;
+      transform: translateX(0);
+    }
+  }
+}
+
+.animate-from-custom-talk,
+#contact article #social #all-messages li.message {
+  transform-origin: 0% 100%;
+  animation: animate-custom-talk 500ms cubic-bezier(0.25, 0.45, 0.45, 0.95) forwards;
+}
+
+@keyframes animate-custom-talk {
+  from { 
+    @apply opacity-0 invisible;
+    transform: scale(0); 
+  } to {
+    @apply opacity-100 visible;
+    transform: scale(1);
+  }
+}

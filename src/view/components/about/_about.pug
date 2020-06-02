@@ -1,0 +1,40 @@
+//- About Section
+section#about(data-scrollspy='true', class=`
+  bg-darkgray
+  flex
+  flex-col
+  justify-center
+  align-center
+  px-6
+  pt-10
+  md:pt-6
+`)
+  h2(data-scroll-animate='on' data-animate-from='left' class=`
+    text-xl 
+    text-white
+    bg-purple-700
+    self-center
+    shadow-sm
+    rounded
+    px-4
+    py-2
+    mb-10
+  `) Who I am
+  p(data-scroll-animate='on' data-animate-from='right' class=`
+    text-justify
+    text-base
+    max-w-screen-lg
+    m-auto
+    leading-loose
+    mb-20
+  `)
+    | Hey! Welcome to my portfolio. #[br]
+    | My name is Julio Cesar and I work as a freelancer Frontend Programmer. #[br]
+    | I'm an undergraduate in IT Management, who loves to read and learn about software development, 
+    | programming languages and network security. I currently live in Florianopolis, Santa Catarina (Brazil)
+    | and I'm 24 years old. #[br]
+    | Even though I currently work as a freelancer, I'm open to all kind of job opportunities.
+    | I've had experience with sales and graphic design in the past, which gave me good communication and
+    | Photoshop skills.
+  h3(class='mb-10 text-center text-xl') Some technologies I can use:
+  include _about_techs

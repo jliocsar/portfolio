@@ -1,0 +1,54 @@
+/*
+  Contact Section Styles
+*/
+#contact article {
+  @apply delay-500;
+}
+
+/*
+  Building messages pop-up style
+*/
+#contact article #social #social-header .fake-button {
+  @apply rounded-full h-3 w-3 bg-transparent border border-solid border-purple-500;
+}
+
+#contact article #social #social-header .fake-button:nth-of-type(1) {
+  margin: .65rem 0 0 1rem;
+}
+
+#contact article #social #social-header .fake-button:nth-of-type(2),
+#contact article #social #social-header .fake-button:nth-of-type(3) {
+  margin: .65rem 0 0 .5rem;
+}
+
+#contact article #social #all-messages,
+#contact article #social #all-messages ul:not(.waiting) {
+  @apply opacity-100 visible;
+}
+
+#contact article #social #all-messages li.message {
+  border-radius: 1rem 1rem 1rem 0;
+  width: fit-content;
+  @apply my-1 py-2 px-4 text-left text-sm text-black bg-lightgray;
+}
+
+#contact article #social #all-messages li.message.loading span {
+  @apply mx-0 font-bold;
+  animation: loading-anim 1000ms linear infinite;
+}
+
+#contact article #social #all-messages li.message.loading span:nth-of-type(2) {
+  animation-delay: 334ms;
+}
+
+#contact article #social #all-messages li.message.loading span:nth-of-type(3) {
+  animation-delay: 667ms;
+}
+
+@keyframes loading-anim {
+  0%, 100% {
+    opacity: .8;
+  } 50% {
+    opacity: .3;
+  }
+}

@@ -1,0 +1,31 @@
+//- List of anchors in menu
+ul(class=`
+  divide-y 
+  divide-gray
+  w-full
+  mx-auto
+  overflow-hidden
+  md:divide-transparent
+  md:flex
+  md:justify-end
+`)
+  each item in items
+    li(title=item.title, class=`
+      md:justify-center
+      md:align-center
+      md:relative
+      md:w-auto
+      md:leading-9
+      md:bg-transparent
+    `)
+      a(href=item.ref, class=`
+        flex
+        relative
+        py-4
+        md:text-sm
+        md:py-1
+        md:px-4
+        md:rounded
+      `)
+        i(class=item.icon)
+        span(class='text-lg block transition ease-in duration-200 text-white md:text-sm')= item.title

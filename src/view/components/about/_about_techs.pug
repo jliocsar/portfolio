@@ -1,0 +1,61 @@
+- const techs = [
+-   {
+-     title: 'JavaScript',
+-     url: 'https://javascript.com/',
+-     image: 'javascript', 
+-   },
+-   {
+-     title: 'NodeJS',
+-     url: 'https://nodejs.org/',
+-     image: 'nodejs', 
+-   },
+-   {
+-     title: 'Sass',
+-     url: 'https://sass-lang.com/',
+-     image: 'sass',
+-   },
+-   {
+-     title: 'Tailwind',
+-     url: 'https://tailwindcss.com/',
+-     image: 'tailwindcss', 
+-   },
+-   {
+-     title: 'Webpack',
+-     url: 'https://webpack.github.io/',
+-     image: 'webpack', 
+-   },
+-   {
+-     title: 'WordPress',
+-     url: 'https://wordpress.org/',
+-     image: 'wordpress',
+-   },
+- ]
+
+ul(class=`
+    grid
+    grid-cols-2
+    justify-center
+    align-center
+    px-6
+    h-auto
+    m-auto
+    mb-20
+    max-w-screen-lg
+    sm:grid-cols-3
+    md:grid-cols-6
+  `)
+    each tech in techs
+      li(class='flex flex-col text-center')
+          a(target='_blank', rel='noopener', href=tech.url)
+            img(alt=`${tech.title} Logo`, title=tech.title, class=`
+                w-48
+                h-20
+                px-8
+                mb-4
+                mt-8
+                mx-auto
+                object-contain
+                sm:w-32
+                sm:h-12
+            `, src=require(`Assets/svg/${tech.image}.svg`).default)
+            | #{tech.title}

@@ -1,0 +1,84 @@
+//- Cards of all projects
+//- Actually using cards with no JS showcase
+//- Using flex instead of grid for old browsers support
+ul(class=`
+  flex
+  flex-wrap
+  justify-center
+  align-center
+  w-screen
+  h-auto
+  m-auto
+  max-w-screen-xl
+`)
+  each project in projects
+    li.project-card(class=`
+      border-none
+      w-64
+      h-64
+      m-2
+      relative
+      rounded-md
+      overflow-hidden
+      shadow-inner
+    `)
+      img(src=project.background, title=project.alt, alt=project.alt, class=`
+        absolute
+        top-0
+        left-0
+        w-full
+        h-full
+      `)
+      .project-title(class=`
+        bg-purple-700
+        py-3
+        px-6
+        h-12
+        absolute
+        top-0
+        left-0
+        right-0
+      `)
+        a(href=project.url)
+          h5(class=`
+            text-lg
+            mb-6
+          `)= project.title
+        p(class=`
+          text-justify
+          md:opacity-0
+        `)= project.description
+      .project-links(class=`
+        absolute
+        my-4 
+        mx-2
+        right-0
+        bottom-0
+        z-10
+      `)
+        a(href=project.url)
+          p(class=`
+            text-base
+            inline
+            w-auto
+            relative
+            py-2 
+            px-4
+            bg-black
+            rounded
+          `) See more at #[i(class=`fab fa-${project.icon}`)]
+  else
+    li(class=`
+      border-none
+      relative
+      max-w-md
+      w-3/5
+      h-64
+      px-4
+      m-auto
+      rounded-md
+      flex
+      bg-black
+      md:w-full
+    `) 
+      span(class='m-auto text-lg') No projects yet :(
