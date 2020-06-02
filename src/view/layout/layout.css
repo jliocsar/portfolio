@@ -35,7 +35,12 @@ footer path {
 }
 
 ::-webkit-scrollbar {
-  @apply w-3 bg-purple-700;
+  @apply w-3;
+  background: linear-gradient(
+    to top,
+    theme('colors.purple.800'),
+    theme('colors.purple.700')
+  );
 }
 
 ::-webkit-scrollbar-thumb {
