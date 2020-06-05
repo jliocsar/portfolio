@@ -1,37 +1,24 @@
+# Personal Portfolio  
 
-  
-
-# Hello!
+## Hello, fella
 
 Welcome to my personal portfolio!
 
-  
-
 This is my first project ever made, and it's a portfolio ironically. Had fun building it and I hope you like it.
-
-  
 
 For now, the portfolio is done. Now I need to build an API endpoint for the projects, so it's easier to add, update and delete my projects listed on the website.
 
-  
-
 I tried to make this as "free software" as possible, thus why I only used free fonts and icons. The "page-breakers" SVGs were made in Inkscape.
-
-  
 
 Feel free to message me on Twitter if you'd like to talk to me:
 
 [@juliocesarmfo](https://twitter.com/juliocesarmfo)
 
-  
-
 See it live at:
 
 https://portfolio.juliocesarmfo.now.sh
 
-  
-
-# Built with
+## Built with
 
 This project was possible thanks to:
 
@@ -43,9 +30,7 @@ This project was possible thanks to:
 
 - [Babel](https://babeljs.io/)
 
-  
-
-# Scripts
+## Scripts
 
 "prod:css": "NODE_ENV=production postcss src/core/tailwind.css -o src/core/core.css && postcss src/index.css -o dist/bundle.css",
 
@@ -57,8 +42,6 @@ This project was possible thanks to:
 
 "server": "webpack-dev-server"
 
-  
-
 - *prod:css* is used to purge all unused TailwindCSS styles, also minifying the CSS bundle;
 
 - *prod:app* is to build the app in production mode;
@@ -69,9 +52,7 @@ This project was possible thanks to:
 
 - *server* is used to run the hot-reload server from Webpack.
 
-  
-
-# Running locally
+## Running locally
 
 To run the project locally, you can run
 
