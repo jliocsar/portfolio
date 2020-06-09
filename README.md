@@ -1,24 +1,38 @@
-# Personal Portfolio  
+<div align="center">
+	<a href="https://portfolio.juliocesarmfo.now.sh">
+		<img width="250" src="https://portfolio.juliocesarmfo.now.sh/cd705f7d6a59bc2a99cd248a309eaeb1.svg" />
+	</a>
+</div>
+<h1 align="center">
+	JULIO CESAR | PORTFOLIO
+</h1>
 
-## Hello, fella
+<p align="center">
+	<img src="https://badgen.net/github/status/juliocesarmfo/portfolio" />
+	<img src="https://badgen.net/github/commits/juliocesarmfo/portfolio?color=purple" />
+	<img src="https://badgen.net/github/last-commit/juliocesarmfo/portfolio?color=cyan" />
+	<img src="https://badgen.net/badge/babel/7.9.6/black" />
+	<img src="https://badgen.net/badge/tailwindcss/1.4.6/blue" />
+	<img src="https://badgen.net/badge/pug/2.0.4/pink" />
+</p>
+
+<h2> Hello! </h2>
 
 Welcome to my personal portfolio!
 
-This is my first project ever made, and it's a portfolio ironically. Had fun building it and I hope you like it.
+This is my first project ever made, and it's a portfolio ironically. Had fun building it and I hope you like it.  
 
 For now, the portfolio is done. Now I need to build an API endpoint for the projects, so it's easier to add, update and delete my projects listed on the website.
 
 I tried to make this as "free software" as possible, thus why I only used free fonts and icons. The "page-breakers" SVGs were made in Inkscape.
 
 Feel free to message me on Twitter if you'd like to talk to me:
-
 [@juliocesarmfo](https://twitter.com/juliocesarmfo)
 
-See it live at:
+Live preview:
+https://portfolio.juliocesarmfo.now.sh  
 
-https://portfolio.juliocesarmfo.now.sh
-
-## Built with
+<h2> Built with </h2>
 
 This project was possible thanks to:
 
@@ -30,40 +44,31 @@ This project was possible thanks to:
 
 - [Babel](https://babeljs.io/)
 
-## Scripts
+<h2> Scripts </h2>
 
-"prod:css": "NODE_ENV=production postcss src/core/tailwind.css -o src/core/core.css && postcss src/index.css -o dist/bundle.css",
+Build Core CSS in Production Mode:
 
-"prod:app": "webpack --mode production",
+    "prod:css": "NODE_ENV=production postcss src/core/tailwind.css -o src/core/core.css && postcss src/index.css -o dist/bundle.css"
+Build App in Production Mode:
 
-"dev:css": "postcss src/core/tailwind.css -o src/core/core.css && postcss src/index.css -o dist/bundle.css",
+    "prod:app": "webpack --mode production"
 
-"dev:app": "webpack --watch --mode development",
+Build Core CSS in Development Mode (does not purge Tailwind CSS unused styles):
 
-"server": "webpack-dev-server"
+    "dev:css": "postcss src/core/tailwind.css -o src/core/core.css && postcss src/index.css -o dist/bundle.css"
 
-- *prod:css* is used to purge all unused TailwindCSS styles, also minifying the CSS bundle;
+Build App in Development Mode (watching changes):
 
-- *prod:app* is to build the app in production mode;
+	"dev:app": "webpack --watch --mode development"
 
-- *dev:css* is to simply bundle the Tailwind core with the custom.css files (takes a while);
+Start Webpack Dev Server:
 
-- *dev:app* is the default build app script;
+	"server": "webpack-dev-server"  
 
-- *server* is used to run the hot-reload server from Webpack.
+<h2> Running locally </h2>
 
-## Running locally
+To run the project locally, you can run <code>npm install</code> in the root folder of the project, and then <code>npm run server</code> after it installed all dependencies.
 
-To run the project locally, you can run
-
-    npm install
-in the root folder of the project, and then
-
-    npm run server
-after it installed all dependencies.
-If the CSS of the web page is clunky, then run
-
-    npm run prod:css
-and that should do the trick.
+If the CSS of the web page is clunky, then run <code>npm run prod:css</code> and that should do the trick.
 
 *Cya!*
