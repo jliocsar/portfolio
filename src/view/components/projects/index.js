@@ -1,17 +1,28 @@
+import axios from 'axios';
 import Projects from './Projects';
 import * as template from './_projects_cards.pug';
 
 /**
- * Will be replaced by API endpoint later
+ * Async function to get all projects from the API
  */
-function temporaryLocals() {
-  const locals = fetch('./projects_cards.json').then((res) => {
-    const body = res.json();
-    return body;
-  }).catch((error) => {
-    throw error;
-  });
-  return locals;
+async function getLocals() {
+  const url = 'https://api-projects.juliocesarmfo.now.sh/api/project-list';
+  const options = {
+    method: 'POST',
+    headers: { 'Content-Type': 'json' },
+    url,
+  };
+
+  let output = null;
+
+  try {
+    const res = await axios(options);
+    output = res.request.response;
+  } catch (error) {
+    output = error;
+  }
+
+  return JSON.parse(output);
 }
 
 /**
@@ -20,7 +31,7 @@ function temporaryLocals() {
 export default async function projectsHandler() {
   // Instantiate a projects component object
   const PROJECTS = new Projects();
-  const locals = await temporaryLocals();
+  const locals = await getLocals();
 
   PROJECTS.article.innerHTML = template(locals);
 }

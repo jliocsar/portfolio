@@ -14,13 +14,15 @@ ul(class=`
   each project in projects
     li.project-card(class=`
       border-none
-      w-64
+      max-w-md
+      w-4/5
       h-64
       m-2
       relative
       rounded-md
       overflow-hidden
       shadow-inner
+      md:w-3/5
     `)
       img(src=project.background, title=project.alt, alt=project.alt, class=`
         absolute
@@ -28,6 +30,7 @@ ul(class=`
         left-0
         w-full
         h-full
+        object-cover
       `)
       .project-title(class=`
         bg-purple-700
@@ -72,7 +75,7 @@ ul(class=`
       border-none
       relative
       max-w-md
-      w-3/5
+      w-4/5
       h-64
       px-4
       m-auto
@@ -81,4 +84,4 @@ ul(class=`
       bg-black
       md:w-full
     `) 
-      span(class='m-auto text-lg') No projects yet :(
+      span(class='m-auto text-lg') No projects yet 😔

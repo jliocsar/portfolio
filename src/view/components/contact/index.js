@@ -24,9 +24,9 @@ function getMessages() {
     ${getAnchor('https://github.com/juliocesarmfo/', 'Github')}
     and/or ${getAnchor('https://codepen.io/juliocesarmfo/', 'Codepen.io')}`,
 
-    'I hope you liked it!',
+    'I hope you liked it 😄',
 
-    'Bye! :)',
+    'Bye!',
   ];
 }
 

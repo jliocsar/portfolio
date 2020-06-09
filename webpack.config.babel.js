@@ -2,7 +2,7 @@ import { join, resolve } from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 const RULES = {
-  js: {
+  js: { // JS Rules
     test: /\.js$/,
     exclude: /node_modules/,
     loader: 'babel-loader',
@@ -15,12 +15,12 @@ const RULES = {
       ],
     },
   },
-  assets: {
+  assets: { // Assets rules
     test: /\.(png|svg|jpg|gif)$/,
     exclude: /node_modules/,
     loader: 'file-loader',
   },
-  pug: {
+  pug: { // Pug rules
     test: /\.pug$/,
     exclude: /node_modules/,
     loader: 'pug-loader',

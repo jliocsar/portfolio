@@ -1,0 +1,19 @@
+/*
+  Projects Section styles
+*/
+#app > main #projects ul li {
+  border: .2rem solid theme('colors.purple.700');
+}
+
+#app > main #projects ul li::after  {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .8);
+}
+
+#app > main #projects ul li .project-title {
+  z-index: 1;
+}
