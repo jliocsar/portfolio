@@ -4,7 +4,7 @@
 	</a>
 </div>
 <h1 align="center">
-	JULIO CESAR | PORTFOLIO
+	Julio Cesar | Portfolio
 </h1>
 
 <p align="center">
@@ -16,7 +16,7 @@
 	<img src="https://badgen.net/badge/pug/2.0.4/pink" />
 </p>
 
-<h2> Hello! </h2>
+<h2> Hello! 👨‍💻</h2>
 
 Welcome to my personal portfolio!
 
@@ -32,7 +32,7 @@ Feel free to message me on Twitter if you'd like to talk to me:
 Live preview:
 https://portfolio.juliocesarmfo.now.sh  
 
-<h2> Built with </h2>
+<h2> Built with 🚀</h2>
 
 This project was possible thanks to:
 
@@ -44,7 +44,7 @@ This project was possible thanks to:
 
 - [Babel](https://babeljs.io/)
 
-<h2> Scripts </h2>
+<h2> Scripts 📜</h2>
 
 Build Core CSS in Production Mode:
 
@@ -65,7 +65,7 @@ Start Webpack Dev Server:
 
 	"server": "webpack-dev-server"  
 
-<h2> Running locally </h2>
+<h2> Running locally 🏡</h2>
 
 To run the project locally, you can run <code>npm install</code> in the root folder of the project, and then <code>npm run server</code> after it installed all dependencies.
 
