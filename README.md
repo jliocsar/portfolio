@@ -22,9 +22,11 @@ Welcome to my personal portfolio!
 
 This is my first project ever made, and it's a portfolio ironically. Had fun building it and I hope you like it.  
 
-For now, the portfolio is done. Now I need to build an API endpoint for the projects, so it's easier to add, update and delete my projects listed on the website.
+For now, the portfolio is done. I have an API endpoint for the projects section too, so it's easier to add, update and delete my projects listed on the website.
 
 I tried to make this as "free software" as possible, thus why I only used free fonts and icons. The "page-breakers" SVGs were made in Inkscape.
+
+Wolf icon made by [Freepik](https://freepik.com/)
 
 Feel free to message me on Twitter if you'd like to talk to me:
 [@juliocesarmfo](https://twitter.com/juliocesarmfo)
