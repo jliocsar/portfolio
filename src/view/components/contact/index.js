@@ -15,7 +15,8 @@ function getMessages() {
 
     `If you're interested in contacting me, 
     you can send me a direct message on my 
-    ${getAnchor('https://twitter.com/jliocsar/', 'Twitter')}`,
+    ${getAnchor('https://twitter.com/jliocsar/', 'Twitter')} or 
+    my ${getAnchor('https://www.linkedin.com/in/jliocsar/', 'LinkedIn')}`,
 
     'Or you can click on the WhatsApp button to your right and message me',
 
