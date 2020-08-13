@@ -16,6 +16,7 @@ import {
   faGithub,
   faCodepen,
   faTwitter,
+  faWordpress,
 } from '@fortawesome/free-brands-svg-icons';
 
 /**
@@ -37,6 +38,7 @@ import {
     faGithub,
     faCodepen,
     faTwitter,
+    faWordpress,
   ];
 
   library.add(...icons);

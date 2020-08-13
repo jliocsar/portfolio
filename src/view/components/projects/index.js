@@ -6,7 +6,7 @@ import * as template from './_projects_cards.pug';
  * Async function to get all projects from the API
  */
 async function getLocals() {
-  const url = 'https://api-projects.juliocesarmfo.now.sh/api/project-list';
+  const url = 'https://api-projects.now.sh/api/project-list';
   const options = {
     method: 'POST',
     headers: { 'Content-Type': 'json' },

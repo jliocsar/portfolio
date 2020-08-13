@@ -27,9 +27,9 @@
 }
 
 #contact article #social #all-messages li.message {
+  @apply my-1 py-2 px-4 text-left text-sm text-black bg-lightgray;
   border-radius: 1rem 1rem 1rem 0;
   width: fit-content;
-  @apply my-1 py-2 px-4 text-left text-sm text-black bg-lightgray;
 }
 
 #contact article #social #all-messages li.message.loading span {

@@ -1,5 +1,10 @@
 - const techs = [
 -   {
+-     title: 'React',
+-     url: 'https://reactjs.org/',
+-     image: 'react',
+-   },
+-   {
 -     title: 'JavaScript',
 -     url: 'https://javascript.com/',
 -     image: 'javascript', 
@@ -13,6 +18,11 @@
 -     title: 'Sass',
 -     url: 'https://sass-lang.com/',
 -     image: 'sass',
+-   },
+-   {
+-     title: 'Bootstrap',
+-     url: 'https://getbootstrap.com/',
+-     image: 'bootstrap',
 -   },
 -   {
 -     title: 'Tailwind',
@@ -43,7 +53,7 @@ ul(class=`
     mb-20
     max-w-screen-lg
     sm:grid-cols-3
-    md:grid-cols-6
+    md:grid-cols-4
   `)
     each tech in techs
       li(class='flex flex-col text-center')

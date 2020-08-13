@@ -15,14 +15,13 @@ function getMessages() {
 
     `If you're interested in contacting me, 
     you can send me a direct message on my 
-    ${getAnchor('https://twitter.com/juliocesarmfo/', 'Twitter')}`,
+    ${getAnchor('https://twitter.com/jliocsar/', 'Twitter')}`,
 
-    `Or e-mail me at 
-    ${getAnchor('mailto:juliocesarmfo@gmail.com', 'juliocesarmfo@gmail.com')}`,
+    'Or you can click on the WhatsApp button to your right and message me',
 
     `Also, feel free to browse my creations on
-    ${getAnchor('https://github.com/juliocesarmfo/', 'Github')}
-    and/or ${getAnchor('https://codepen.io/juliocesarmfo/', 'Codepen.io')}`,
+    ${getAnchor('https://github.com/jliocsar/', 'Github')}
+    and/or ${getAnchor('https://codepen.io/jliocsar/', 'Codepen.io')}`,
 
     'I hope you liked it 😄',
 

@@ -9,6 +9,10 @@
   @apply relative;
 }
 
+#app > header.active nav ul {
+  height: max-content;
+}
+
 #app > header.active nav ul li a svg {
   @apply w-6 h-6 mr-4 self-center;
 }

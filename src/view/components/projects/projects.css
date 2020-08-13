@@ -1,11 +1,11 @@
 /*
   Projects Section styles
 */
-#app > main #projects ul li {
+#app > main #projects ul .project-card {
   border: .2rem solid theme('colors.purple.700');
 }
 
-#app > main #projects ul li::after  {
+#app > main #projects ul .project-card::after  {
   content: '';
   position: absolute;
   display: block;
@@ -14,6 +14,6 @@
   background: rgba(0, 0, 0, .8);
 }
 
-#app > main #projects ul li .project-title {
+#app > main #projects ul .project-card .project-title {
   z-index: 1;
 }
