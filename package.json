@@ -1,7 +1,7 @@
 {
-  "name": "jcportfolio",
-  "version": "1.0.1",
-  "description": "Julio Cesar | Frontend Portfolio",
+  "name": "portfolio",
+  "version": "1.0.2",
+  "description": "Julio Cesar | Freelance Web Dev Portfolio",
   "private": true,
   "scripts": {
     "prod:css": "NODE_ENV=production postcss src/core/tailwind.css -o src/core/core.css && postcss src/index.css -o dist/bundle.css",
