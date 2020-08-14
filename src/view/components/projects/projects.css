@@ -1,7 +1,7 @@
 /*
   Projects Section styles
 */
-@media screen and (min-width: 468px) {
+@media screen and (max-width: 468px) {
   #app > main #projects ul {
     @apply overflow-x-scroll overflow-y-hidden flex-no-wrap justify-start;
   }
