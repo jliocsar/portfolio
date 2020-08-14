@@ -1,0 +1,3 @@
+# Main Group
+User-agent: *
+Allow: /
