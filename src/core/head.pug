@@ -11,9 +11,17 @@ title Julio Cesar | Portfolio
 
 link(rel='manifest' href='./site.webmanifest')/
 link(rel='stylesheet', href='./bundle.css', media='all')/
-link(rel='stylesheet', href='https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap', async)/
 link(rel='apple-touch-icon', sizes='180x180', href=require('Icons/apple-touch-icon.png').default)/
 link(rel='icon', type='image/png', sizes='32x32', href=require('Icons/favicon-32x32.png').default)/
 link(rel='icon', type='image/png', sizes='16x16', href=require('Icons/favicon-16x16.png').default)/
 link(rel='mask-icon', href=require('Icons/safari-pinned-tab.svg').default, color='#6b46c1')/
 link(rel='canonical', href='https://portfolio.juliocesarmfo.now.sh')/
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+script(async, src='https://www.googletagmanager.com/gtag/js?id=G-P964G06G0Y')
+script.
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P964G06G0Y');

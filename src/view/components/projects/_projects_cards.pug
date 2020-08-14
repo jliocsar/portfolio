@@ -15,14 +15,11 @@ ul(class=`
     li.project-card(class=`
       border-none
       max-w-md
-      w-4/5
-      h-64
       m-2
       relative
       rounded-md
       overflow-hidden
       shadow-inner
-      md:w-3/5
     `)
       img(src=project.background, title=project.alt, alt=project.alt, class=`
         absolute
@@ -43,11 +40,12 @@ ul(class=`
         right-0
       `)
         a(href=project.url)
-          h5(class=`
+          span(class=`
             text-lg
             mb-6
           `)= project.title
         p(class=`
+          mt-4
           text-justify
           md:opacity-0
         `)= project.description
@@ -59,7 +57,7 @@ ul(class=`
         bottom-0
         z-10
       `)
-        a(href=project.url)
+        a(href=project.url, target='_blank', rel='noopener noreferrer')
           p(class=`
             text-base
             flex
