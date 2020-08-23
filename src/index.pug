@@ -2,7 +2,7 @@ doctype html
 html(lang='pt-BR', class='font-mono xl:text-lg')
   head
     //- Including head meta, links and scripts
-    include core/head
+    include view/core/head
   body
     div(id='app', class='bg-black text-white antialiased')
       //- Including menu component
@@ -19,4 +19,5 @@ html(lang='pt-BR', class='font-mono xl:text-lg')
         include view/components/contact/_contact
         img(alt='A page breaker just for design.', src=require('Assets/svg/contact-breaker.svg').default, class='w-screen -my-1')
 
-      include core/footer
+      include view/components/whatsapp/_whatsapp
+      include view/core/footer

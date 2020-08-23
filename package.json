@@ -4,7 +4,7 @@
   "description": "Julio Cesar | Freelance Web Dev Portfolio",
   "private": true,
   "scripts": {
-    "prod:css": "NODE_ENV=production postcss src/core/tailwind.css -o src/core/core.css && postcss src/index.css -o dist/bundle.css",
+    "prod:css": "NODE_ENV=production postcss src/view/core/tailwind.css -o src/view/core/core.css && postcss src/index.css -o dist/bundle.css",
     "prod:app": "webpack --mode production",
     "dev:css": "postcss src/index.css -o dist/bundle.css",
     "dev:app": "webpack --watch --mode development",

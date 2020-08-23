@@ -1,0 +1,7 @@
+/*
+  About Section styles
+*/
+section#about > p {
+  text-justify: distribute;
+  text-align-last: left;
+}

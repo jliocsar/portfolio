@@ -17,6 +17,7 @@ import {
   faCodepen,
   faTwitter,
   faWordpress,
+  faWhatsapp,
 } from '@fortawesome/free-brands-svg-icons';
 
 /**
@@ -39,6 +40,7 @@ import {
     faCodepen,
     faTwitter,
     faWordpress,
+    faWhatsapp,
   ];
 
   library.add(...icons);

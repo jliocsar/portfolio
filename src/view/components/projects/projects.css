@@ -1,25 +1,6 @@
 /*
   Projects Section styles
 */
-@media screen and (max-width: 468px) {
-  #app > main #projects ul {
-    @apply overflow-x-scroll overflow-y-hidden flex-no-wrap justify-start;
-  }
-
-  #app > main #projects ul::-webkit-scrollbar {
-    @apply rounded-md h-2;
-    background: rgba(255, 255, 255, .05);
-  }
-
-  #app > main #projects ul .project-card {
-    @apply mx-0 my-2;
-  }
-
-  #app > main #projects ul .project-card:not(:last-of-type) {
-    @apply mr-4;
-  }
-}
-
 #app > main #projects ul .project-card {
   border: .2rem solid theme('colors.purple.700');
   min-width: 20rem;
@@ -37,4 +18,24 @@
 
 #app > main #projects ul .project-card .project-title {
   z-index: 1;
+}
+
+@media screen and (max-width: 468px) {
+  #app > main #projects ul {
+    @apply overflow-x-scroll overflow-y-hidden flex-no-wrap justify-start;
+  }
+
+  #app > main #projects ul::-webkit-scrollbar {
+    @apply rounded-md h-2;
+    background: rgba(255, 255, 255, .05);
+  }
+
+  #app > main #projects ul .project-card {
+    @apply mx-0 my-2;
+    min-width: 100%;
+  }
+
+  #app > main #projects ul .project-card:not(:last-of-type) {
+    @apply mr-4;
+  }
 }
